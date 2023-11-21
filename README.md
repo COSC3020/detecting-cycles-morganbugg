@@ -15,3 +15,7 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+### Answer
+
+As with the augmenting path exercise, the complexity of this implementation should be $\Theta(V + E)$.  This implementation uses depth-first search to navigate the graph, going through each vertex and edge.  However, the use of a "visited" array keeps the algorithm from revisiting vertices.  This keeps the complexity from growing to be $V \cdot E$
